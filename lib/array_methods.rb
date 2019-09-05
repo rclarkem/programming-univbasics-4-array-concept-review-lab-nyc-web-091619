@@ -8,8 +8,13 @@ def find_element_index(array, value_to_find)
 end
 
 #scale = [2,3,4,5]
-def find_max_value(array)
-  array.max()
+maxV = 0
+array.length.times do |index|
+ if array[index] > maxV
+ maxV = array[index]
+ end
+end
+maxV
 end
 
 def find_min_value(array)
